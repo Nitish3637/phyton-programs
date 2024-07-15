@@ -1,0 +1,8 @@
+ x=&#39;my name is dilip&#39;
+y=&#39;ing&#39;
+z=x+y
+if len(x)&gt;3:
+print(z)
+else:
+
+print(x)
