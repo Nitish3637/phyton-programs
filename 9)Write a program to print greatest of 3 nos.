@@ -1,0 +1,10 @@
+ a=int(input(&#39;enter value:&#39;))
+b=int(input(&#39;enter value:&#39;))
+c=int(input(&#39;enter value:&#39;))
+if a&gt;=b and a&gt;=c:
+greatest=a
+elif b&gt;a and b&gt;=c:
+greatest=b
+else:
+greatest=c
+print(&#39;the greatest no is:&#39;,greatest)
