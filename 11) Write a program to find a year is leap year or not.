@@ -1,0 +1,5 @@
+x=int(input(&#39;enter value:&#39;))
+if x%4==0 and x%100!=0:
+print(&#39;leap year&#39;)
+else:
+print(&#39;not leap year&#39;)
