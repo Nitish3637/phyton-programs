@@ -1,0 +1,26 @@
+ def are_anagrams(str1, str2):
+str1 = str1.replace(&#39; &#39;, &#39;&#39;).lower()
+str2 = str2.replace(&#39; &#39;, &#39;&#39;).lower()
+if len(str1) != len(str2):
+return False
+char_count = {}
+for char in str1:
+if char in char_count:
+char_count[char] += 1
+else:
+char_count[char] = 1
+for char in str2:
+if char in char_count:
+char_count[char] -= 1
+else:
+return False
+for count in char_count.values():
+if count != 0:
+return False
+return True
+string1 = &quot;a gentleman&quot;
+string2 = &quot;elegant man&quot;
+if are_anagrams(string1, string2):
+print(f&quot;&#39;{string1}&#39; and &#39;{string2}&#39; are anagrams.&quot;)
+else:
+print(f&quot;&#39;{string1}&#39; and &#39;{string2}&#39; are not anagrams.&quot;)
