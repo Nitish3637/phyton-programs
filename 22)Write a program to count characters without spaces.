@@ -1,0 +1,6 @@
+ str1=input()
+for i in str1:
+if i==&#39;&#39;:
+continue
+count=count+1
+print(count)
