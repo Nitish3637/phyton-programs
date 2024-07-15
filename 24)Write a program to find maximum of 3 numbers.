@@ -1,0 +1,12 @@
+def max(a,b,c):
+if (a&gt;=b) and (a&gt;=c):
+return a
+elif (b&gt;=a) and (b&gt;=c):
+return b
+else:
+return c
+a=int(input(&quot;&quot;))
+b=int(input(&quot;&quot;))
+c=int(input(&quot;&quot;))
+max_number=max(a,b,c)
+print(&#39;the maximum no is:&#39;,max_number)
