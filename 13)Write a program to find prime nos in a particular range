@@ -1,0 +1,16 @@
+ def is_prime(num):
+if num &lt;= 1:
+return False
+for i in range(2, int(num**0.5) + 1):
+if num % i == 0:
+return False
+return True
+start = int(input(&quot;Enter the starting number of the range: &quot;))
+end = int(input(&quot;Enter the ending number of the range: &quot;))
+if start &gt; end:
+print(&quot;Invalid range. Starting number should be less than or equal to the ending number.&quot;)
+else:
+print(f&quot;Prime numbers between {start} and {end} are:&quot;)
+for num in range(start, end + 1):
+if is_prime(num):
+print(num)
