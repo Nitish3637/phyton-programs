@@ -1,0 +1,13 @@
+ def per_no(n):
+if n&lt;=0:
+return False
+sum_of_divisors=0
+for i in range(1,n):
+if n%i==0:
+sum_of_divisors+=i
+return sum_of_divisors==n
+n=int(input(&quot;&quot;))
+if per_no(n):
+print(f&quot;{n} is a perfect number.&quot;)
+else:
+print(f&quot;{n} is not a perfect number.&quot;)
