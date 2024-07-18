@@ -1,0 +1,7 @@
+def find(lst1):
+length=len(lst1)
+lst1.sort()
+print(&#39;Second largest is:&#39;,lst1[length-2])
+print(&#39;second smallest is:&#39;,lst1[1])
+lst1=[12,45,16,17,19,20]
+large=find(lst1)
