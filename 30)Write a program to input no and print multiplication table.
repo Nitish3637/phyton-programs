@@ -1,0 +1,6 @@
+ def mul_table():
+x= int(input(&quot;&quot;))
+print(f&quot;Multiplication Table for {x}:&quot;)
+for i in range(1,11):
+print(f&quot;{x}x{i}={x*i}&quot;)
+mul_table()
